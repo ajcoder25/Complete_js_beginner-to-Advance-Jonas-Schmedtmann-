@@ -131,21 +131,18 @@ console.log(age2);
 
 //Function declaration
 
-function percentageOfWorld1(population) {
-    return (population / 7900) * 100
-}
 
 
-const checkChina = percentageOfWorld1(140)
-const checkIndia = percentageOfWorld1(142)
-const checkUsa = percentageOfWorld1(50)
+// const checkChina = percentageOfWorld1(140)
+// const checkIndia = percentageOfWorld1(142)
+// const checkUsa = percentageOfWorld1(50)
 
 
 
 
-console.log(`China's ${checkChina} 2nd Highest`)
-console.log(` India's ${checkIndia} highest`)
-console.log(`Usa's ${checkUsa} 3rd highest`)
+// console.log(`China's ${checkChina} 2nd Highest`)
+// console.log(` India's ${checkIndia} highest`)
+// console.log(`Usa's ${checkUsa} 3rd highest`)
 
 
 //function expression
@@ -217,3 +214,130 @@ const UsaPop = percentageOfWorld3(1940)
 console.log('China:' + chinaPoP)
 console.log('India:' + indiaPop)
 console.log('UsaPop:' + UsaPop)
+
+
+///////////////////////////////////////////////////
+
+// Function calling another function
+
+
+function multiplyByTwo(number) {
+    return number * 2;
+}
+
+function squareAndMultiply(value) {
+    const squared = value ** 2;
+    const result = multiplyByTwo(squared)
+    return result;
+}
+
+
+// calling SquareAnd Multiply function
+const finalResult = squareAndMultiply(5);
+
+console.log(finalResult);
+
+///////////////////////////////
+
+////////////////////////////////////
+// Javascript function calling another function
+
+
+// Step 1st
+
+// function percentageOfWorld1(population) {
+//     const pop = 7900
+//     return (population / 7900) * 100
+// }
+
+// //step-2nd
+
+// function describePopulation(country, population) {
+
+//     const percentage = percentageOfWorld1(population)
+
+//     const description = `${country} has ${population.toFixed(1)}  % million people, which is about 18.2% of the world`
+
+
+//     return description;
+
+// }
+
+// console.log('China:', describePopulation('China', 440));
+// console.log('India:', describePopulation('India', 445));
+// console.log('USA:', describePopulation('USA', 400));
+
+
+
+
+
+function percentageOfWorld1(country, population) {
+    const calc = (population / 7900) * 100
+
+    console.log(`${country} has ${population} million people, which is about 18.2% of the world`)
+    return calc;
+
+
+
+}
+
+
+function describeCountry(country, population) {
+    const result = percentageOfWorld1(population)
+    return result;
+}
+
+console.log(describeCountry('India:', 10));
+
+
+
+
+////////////////////////////////////////////////////////////////////
+
+//step 1st: Creating the arrow function
+
+const calcAverage = (a, b, c) => (a + b + c) / 3
+console.log(calcAverage(4, 5, 8));
+
+
+//Test-1
+
+let avgDolhins = calcAverage(44, 23, 71);
+let avgKoalas = calcAverage(65, 54, 49);
+
+console.log(avgDolhins);
+console.log(avgKoalas);
+
+
+function checkWinner(avgDolhins, avgKoalas) {
+
+    if (avgDolhins >= 2 * avgKoalas) {
+
+        console.log(`${avgDolhins} vs ${avgKoalas} that's why Dolhin Win's`)
+
+
+    }
+
+    else if (avgKoalas >= 2 * avgDolhins) {
+
+
+        console.log(`${avgKoalas} vs ${avgDolhins} that's why koalas wins `)
+    }
+
+    else {
+        console.log('no! one wins')
+    }
+
+
+
+}
+
+
+checkWinner(avgDolhins, avgKoalas)
+
+//Data 2
+
+avgDolhins = calcAverage(85, 54, 41);
+avgKoalas = calcAverage(23, 3, 27);
+
+checkWinner(avgDolhins, avgKoalas);
