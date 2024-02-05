@@ -341,3 +341,131 @@ avgDolhins = calcAverage(85, 54, 41);
 avgKoalas = calcAverage(23, 3, 27);
 
 checkWinner(avgDolhins, avgKoalas);
+
+
+
+
+///////////////////////////////////////////////////////
+
+
+
+
+
+// const years = [1992, 1993, 1994, 1996]
+// years[2] = 1998
+// console.log(years);
+
+
+
+// ///////////////
+// function checkYourBirth(birth) {
+//     return 2037 - birth;
+// }
+
+
+// const ageCheck = [1990, 1994, 1995, 1996, 1997];
+
+// // We want to calculate for the 
+
+// const age1 = checkYourBirth(ageCheck[0]);
+// const age3 = checkYourBirth(ageCheck[ageCheck.length - 1])
+
+// const age4 = checkYourBirth(ageCheck[2]);
+// console.log(age1, age3, age4);
+
+
+
+// function checkYourDob = (birth){
+//     return 2024 - birth
+// }
+
+
+
+
+// function percentageOfWorld1(population) {
+//     const pop = 7900
+//     return (population / 7900) * 100
+// }
+
+
+// const population = [10, 1441, 1554, 20, 30];
+
+// const percentages = [
+
+//     percentageOfWorld1(population[0]),
+//     percentageOfWorld1(population[1]),
+//     percentageOfWorld1(population[2]),
+//     percentageOfWorld1(population[3]),
+//     percentageOfWorld1(population[population.length - 1])
+
+// ];
+
+
+// console.log(percentages);
+
+
+
+
+
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100
+}
+
+
+///
+const population = [10, 140, 150, 160]
+
+const percentage = [
+    percentageOfWorld1(population[0]),
+    percentageOfWorld1(population[1]),
+    percentageOfWorld1(population[population.length - 1])
+]
+
+console.log(percentage);
+
+
+/// Basic Array Method
+
+const friend = ['Ajay', 'books', 'Michael', 'Rain']
+
+friend.push('Pooja');
+console.log(friend);
+
+friend.unshift('P')
+console.log(friend);
+
+//Remove elements 
+friend.pop();
+console.log(friend.indexOf('Michael'));
+console.log(friend.push('kumar'));
+console.log(friend.includes('kumar'))
+console.log(friend);
+
+
+
+/////////////////////////////////////
+
+// // Array Question
+// const calcTip = function (bill) {
+//     return bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+// }
+
+
+
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.20 * bill;
+}
+
+
+const bills = [125, 555, 44]
+
+const tips = [
+    calcTip(bills[0]),
+    calcTip(bills[1]),
+    calcTip(bills[2]),
+
+
+]
+
+console.log(bills, tips);
