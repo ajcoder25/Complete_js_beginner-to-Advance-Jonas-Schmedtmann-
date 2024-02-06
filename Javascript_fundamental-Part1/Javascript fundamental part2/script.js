@@ -13,24 +13,24 @@
 // foodProcessor(5, 0);
 
 
-function foodProcessor(apple, orange) {
+// function foodProcessor(apple, orange) {
 
-    const juice = `This glass is made from ${apple} apples and ${orange} oranges`
+//     const juice = `This glass is made from ${apple} apples and ${orange} oranges`
 
-    return juice;
-}
-
-
-const finalJuice = foodProcessor(10, 1);
-
-console.log(finalJuice);
+//     return juice;
+// }
 
 
-const orangeJuice = foodProcessor(0, 10);
-console.log(orangeJuice);
+// const finalJuice = foodProcessor(10, 1);
 
-const appleJuice = foodProcessor(10, 0);
-console.log(appleJuice);
+// console.log(finalJuice);
+
+
+// const orangeJuice = foodProcessor(0, 10);
+// console.log(orangeJuice);
+
+// const appleJuice = foodProcessor(10, 0);
+// console.log(appleJuice);
 
 
 ///////////
@@ -57,24 +57,24 @@ console.log(appleJuice);
 
 // Function declaration
 
-function calcAge(birthYear) {
-    return 2024 - birthYear
-}
+// function calcAge(birthYear) {
+//     return 2024 - birthYear
+// }
 
-const check = calcAge(1997)
-console.log(check);
+// const check = calcAge(1997)
+// console.log(check);
 
 
-//////////////////////////////
+// //////////////////////////////
 
-// function expression
+// // function expression
 
-const checkAge = function (birthYear) {
-    return 2024 - birthYear
-}
+// const checkAge = function (birthYear) {
+//     return 2024 - birthYear
+// }
 
-const age2 = checkAge(1995);
-console.log(age2);
+// const age2 = checkAge(1995);
+// console.log(age2);
 
 
 
@@ -147,19 +147,19 @@ console.log(age2);
 
 //function expression
 
-const percentageOfWorld2 = function (population) {
-    return (population / 7900) * 100
-}
+// const percentageOfWorld2 = function (population) {
+//     return (population / 7900) * 100
+// }
 
 
-const nowChina = percentageOfWorld2(140);
-const nowIndia = percentageOfWorld2(145);
-const nowUsa = percentageOfWorld2(150)
+// const nowChina = percentageOfWorld2(140);
+// const nowIndia = percentageOfWorld2(145);
+// const nowUsa = percentageOfWorld2(150)
 
 
-console.log('China' + nowChina)
-console.log('India' + nowIndia)
-console.log('nowUsa' + nowUsa)
+// console.log('China' + nowChina)
+// console.log('India' + nowIndia)
+// console.log('nowUsa' + nowUsa)
 
 /////Arrow Function
 
@@ -178,64 +178,64 @@ console.log('nowUsa' + nowUsa)
 ///Arrow Function
 
 
-const yearsUntilRetirement = (birthyear, Name) => {
-    const age = 2037 - birthyear;
-    const retirement = 65 - age;
-    return `${Name} retires in ${retirement} years`;
-}
+// const yearsUntilRetirement = (birthyear, Name) => {
+//     const age = 2037 - birthyear;
+//     const retirement = 65 - age;
+//     return `${Name} retires in ${retirement} years`;
+// }
 
-console.log(yearsUntilRetirement(1991, "Ajay"));
-
-
-const checkYourRetirement = (Name, years) => {
-
-    const age = 2037 - years
-    const retirmentAge = 65 - years
-    return `${Name} you are only left with these many ${retirmentAge} in service`
-
-}
-
-console.log(checkYourRetirement('Ajay', 1997))
+// console.log(yearsUntilRetirement(1991, "Ajay"));
 
 
-//Creating the Arrow Function
+// const checkYourRetirement = (Name, years) => {
+
+//     const age = 2037 - years
+//     const retirmentAge = 65 - years
+//     return `${Name} you are only left with these many ${retirmentAge} in service`
+
+// }
+
+// console.log(checkYourRetirement('Ajay', 1997))
 
 
-const percentageOfWorld3 = (population) => {
-
-    return (population / 7900) * 100
-}
+// //Creating the Arrow Function
 
 
-const chinaPoP = percentageOfWorld1(1990);
-const indiaPop = percentageOfWorld3(1990)
-const UsaPop = percentageOfWorld3(1940)
+// const percentageOfWorld3 = (population) => {
 
-console.log('China:' + chinaPoP)
-console.log('India:' + indiaPop)
-console.log('UsaPop:' + UsaPop)
+//     return (population / 7900) * 100
+// }
 
 
-///////////////////////////////////////////////////
+// const chinaPoP = percentageOfWorld1(1990);
+// const indiaPop = percentageOfWorld3(1990)
+// const UsaPop = percentageOfWorld3(1940)
 
-// Function calling another function
-
-
-function multiplyByTwo(number) {
-    return number * 2;
-}
-
-function squareAndMultiply(value) {
-    const squared = value ** 2;
-    const result = multiplyByTwo(squared)
-    return result;
-}
+// console.log('China:' + chinaPoP)
+// console.log('India:' + indiaPop)
+// console.log('UsaPop:' + UsaPop)
 
 
-// calling SquareAnd Multiply function
-const finalResult = squareAndMultiply(5);
+// ///////////////////////////////////////////////////
 
-console.log(finalResult);
+// // Function calling another function
+
+
+// function multiplyByTwo(number) {
+//     return number * 2;
+// }
+
+// function squareAndMultiply(value) {
+//     const squared = value ** 2;
+//     const result = multiplyByTwo(squared)
+//     return result;
+// }
+
+
+// // calling SquareAnd Multiply function
+// const finalResult = squareAndMultiply(5);
+
+// console.log(finalResult);
 
 ///////////////////////////////
 
@@ -271,76 +271,76 @@ console.log(finalResult);
 
 
 
-function percentageOfWorld1(country, population) {
-    const calc = (population / 7900) * 100
+// function percentageOfWorld1(country, population) {
+//     const calc = (population / 7900) * 100
 
-    console.log(`${country} has ${population} million people, which is about 18.2% of the world`)
-    return calc;
+//     console.log(`${country} has ${population} million people, which is about 18.2% of the world`)
+//     return calc;
+
+
+
+// }
+
+
+// function describeCountry(country, population) {
+//     const result = percentageOfWorld1(population)
+//     return result;
+// }
+
+// console.log(describeCountry('India:', 10));
+
+
+
+
+// ////////////////////////////////////////////////////////////////////
+
+// //step 1st: Creating the arrow function
+
+// const calcAverage = (a, b, c) => (a + b + c) / 3
+// console.log(calcAverage(4, 5, 8));
+
+
+// //Test-1
+
+// let avgDolhins = calcAverage(44, 23, 71);
+// let avgKoalas = calcAverage(65, 54, 49);
+
+// console.log(avgDolhins);
+// console.log(avgKoalas);
+
+
+// function checkWinner(avgDolhins, avgKoalas) {
+
+//     if (avgDolhins >= 2 * avgKoalas) {
+
+//         console.log(`${avgDolhins} vs ${avgKoalas} that's why Dolhin Win's`)
+
+
+//     }
+
+//     else if (avgKoalas >= 2 * avgDolhins) {
+
+
+//         console.log(`${avgKoalas} vs ${avgDolhins} that's why koalas wins `)
+//     }
+
+//     else {
+//         console.log('no! one wins')
+//     }
 
 
 
 }
 
 
-function describeCountry(country, population) {
-    const result = percentageOfWorld1(population)
-    return result;
-}
+// checkWinner(avgDolhins, avgKoalas)
 
-console.log(describeCountry('India:', 10));
+// //Data 2
 
+// avgDolhins = calcAverage(85, 54, 41);
+// avgKoalas = calcAverage(23, 3, 27);
 
-
-
-////////////////////////////////////////////////////////////////////
-
-//step 1st: Creating the arrow function
-
-const calcAverage = (a, b, c) => (a + b + c) / 3
-console.log(calcAverage(4, 5, 8));
-
-
-//Test-1
-
-let avgDolhins = calcAverage(44, 23, 71);
-let avgKoalas = calcAverage(65, 54, 49);
-
-console.log(avgDolhins);
-console.log(avgKoalas);
-
-
-function checkWinner(avgDolhins, avgKoalas) {
-
-    if (avgDolhins >= 2 * avgKoalas) {
-
-        console.log(`${avgDolhins} vs ${avgKoalas} that's why Dolhin Win's`)
-
-
-    }
-
-    else if (avgKoalas >= 2 * avgDolhins) {
-
-
-        console.log(`${avgKoalas} vs ${avgDolhins} that's why koalas wins `)
-    }
-
-    else {
-        console.log('no! one wins')
-    }
-
-
-
-}
-
-
-checkWinner(avgDolhins, avgKoalas)
-
-//Data 2
-
-avgDolhins = calcAverage(85, 54, 41);
-avgKoalas = calcAverage(23, 3, 27);
-
-checkWinner(avgDolhins, avgKoalas);
+// checkWinner(avgDolhins, avgKoalas);
 
 
 
@@ -407,39 +407,39 @@ checkWinner(avgDolhins, avgKoalas);
 
 
 
-function percentageOfWorld1(population) {
-    return (population / 7900) * 100
-}
+// function percentageOfWorld1(population) {
+//     return (population / 7900) * 100
+// }
 
 
-///
-const population = [10, 140, 150, 160]
+// ///
+// const population = [10, 140, 150, 160]
 
-const percentage = [
-    percentageOfWorld1(population[0]),
-    percentageOfWorld1(population[1]),
-    percentageOfWorld1(population[population.length - 1])
-]
+// const percentage = [
+//     percentageOfWorld1(population[0]),
+//     percentageOfWorld1(population[1]),
+//     percentageOfWorld1(population[population.length - 1])
+// ]
 
-console.log(percentage);
+// console.log(percentage);
 
 
-/// Basic Array Method
+// /// Basic Array Method
 
-const friend = ['Ajay', 'books', 'Michael', 'Rain']
+// const friend = ['Ajay', 'books', 'Michael', 'Rain']
 
-friend.push('Pooja');
-console.log(friend);
+// friend.push('Pooja');
+// console.log(friend);
 
-friend.unshift('P')
-console.log(friend);
+// friend.unshift('P')
+// console.log(friend);
 
-//Remove elements 
-friend.pop();
-console.log(friend.indexOf('Michael'));
-console.log(friend.push('kumar'));
-console.log(friend.includes('kumar'))
-console.log(friend);
+// //Remove elements 
+// friend.pop();
+// console.log(friend.indexOf('Michael'));
+// console.log(friend.push('kumar'));
+// console.log(friend.includes('kumar'))
+// console.log(friend);
 
 
 
@@ -453,19 +453,80 @@ console.log(friend);
 
 
 
-const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.20 * bill;
-}
+// const calcTip = function (bill) {
+//     return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.20 * bill;
+// }
 
 
-const bills = [125, 555, 44]
+// const bills = [125, 555, 44]
 
-const tips = [
-    calcTip(bills[0]),
-    calcTip(bills[1]),
-    calcTip(bills[2]),
+// const tips = [
+//     calcTip(bills[0]),
+//     calcTip(bills[1]),
+//     calcTip(bills[2]),
 
 
-]
+// ]
 
-console.log(bills, tips);
+// console.log(bills, tips);
+
+
+
+/////////////////////////////////////////////////////////
+
+
+// const data = {
+//     Name: 'AJay',
+//     lastName: 'yadav',
+//     age: 2024 - 1997,
+// //     bestFriend: ['Books', 'podcast', 'family']
+// // };
+
+
+///Add the data in object
+
+// data['email'] = 'ajay12676@gmail.com';
+// data.location = 'Dehradun';
+
+
+
+// when you try acess data using dot notion you will not be able to do whereas in bracket notation you can do it 
+// const checkData = prompt("What do you want to know about the Ajay")
+
+
+
+// if (data[checkData]) {
+//     console.log(data[checkData]);
+
+// }
+// else {
+//     console.log('You should try to enter the correct value')
+// }
+
+
+
+//Challenge 
+//Jonas has 3 friend, and his best friend is called Michael
+
+// const data2 = {
+//     Name: 'Jonas',
+//     bestFriend: ['Michael', 'Peter', 'steven']
+// }
+
+
+// console.log(`${data2.Name} has ${data2.bestFriend.length}, and his best friend is called ${data2.bestFriend[0]}`);
+
+/////////////////Object Method 
+const data2 = {
+    Name: 'Jonas',
+    bestFriend: ['Michael', 'Peter', 'Steven'],
+    birthYear: 1997,
+
+    ageCalc: function () {
+        console.log(this);
+        return 2024 - this.birthYear;
+    }
+};
+
+// Example usage:
+console.log(data2.ageCalc());
