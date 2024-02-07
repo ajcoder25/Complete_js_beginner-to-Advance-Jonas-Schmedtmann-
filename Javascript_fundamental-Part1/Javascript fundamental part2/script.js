@@ -330,7 +330,7 @@
 
 
 
-}
+
 
 
 // checkWinner(avgDolhins, avgKoalas)
@@ -365,7 +365,7 @@
 
 // const ageCheck = [1990, 1994, 1995, 1996, 1997];
 
-// // We want to calculate for the 
+// // We want to calculate for the
 
 // const age1 = checkYourBirth(ageCheck[0]);
 // const age3 = checkYourBirth(ageCheck[ageCheck.length - 1])
@@ -434,7 +434,7 @@
 // friend.unshift('P')
 // console.log(friend);
 
-// //Remove elements 
+// //Remove elements
 // friend.pop();
 // console.log(friend.indexOf('Michael'));
 // console.log(friend.push('kumar'));
@@ -490,7 +490,7 @@
 
 
 
-// when you try acess data using dot notion you will not be able to do whereas in bracket notation you can do it 
+// when you try acess data using dot notion you will not be able to do whereas in bracket notation you can do it
 // const checkData = prompt("What do you want to know about the Ajay")
 
 
@@ -505,7 +505,7 @@
 
 
 
-//Challenge 
+//Challenge
 //Jonas has 3 friend, and his best friend is called Michael
 
 // const data2 = {
@@ -516,17 +516,80 @@
 
 // console.log(`${data2.Name} has ${data2.bestFriend.length}, and his best friend is called ${data2.bestFriend[0]}`);
 
-/////////////////Object Method 
-const data2 = {
-    Name: 'Jonas',
-    bestFriend: ['Michael', 'Peter', 'Steven'],
-    birthYear: 1997,
+/////////////////Object Method
+// const data2 = {
+//     Name: 'Jonas',
+//     bestFriend: ['Michael', 'Peter', 'Steven'],
+//     birthYear: 1997,
 
-    ageCalc: function () {
-        console.log(this);
-        return 2024 - this.birthYear;
+//     ageCalc: function () {
+//         console.log(this);
+//         return 2024 - this.birthYear;
+//     }
+// };
+
+// // Example usage:
+// console.log(data2.ageCalc());
+
+
+
+////////////////////////////////////////////////////////Object Method
+
+
+//Challenges Jonas is a 46- years old teacher, and he has a driver's license
+
+const jonas = {
+    firstName: 'Jonas',
+    age: 46,
+    hasDriverLicense: true,
+
+
+    calcAge: function (age) {
+        const birthYear = 2024 - this.age;
+        console.log(this.birthYear);
+
+    },
+
+    getSummmary: function () {
+        return `${this.firstName} he is born in ${this.birthYear}, and he has a ${this.hasDriverLicense ? 'a' : 'b'} driver's license`
+    }
+
+
+};
+
+
+
+jonas.getSummmary();
+
+
+
+///Question
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
     }
 };
 
-// Example usage:
-console.log(data2.ageCalc());
+const john = {
+    fullName: 'John Miller',
+    mass: 92,
+    height: 1.95,
+    johnBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+
+mark.calcBMI();
+console.log(mark.bmi);
+
+john.johnBMI();
+console.log(john.bmi);
+
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+}
