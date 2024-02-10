@@ -593,3 +593,91 @@ console.log(john.bmi);
 if (mark.bmi > john.bmi) {
     console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
 }
+
+
+
+
+/////////////////////loop 
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`2 * ${rep} = ${2 * rep} `)
+}
+
+
+// Looping Array
+
+// const Ajay = [firstName = 'Yadav', DOB = '1997']
+
+// for (let i = 1; i < 2; i++) {
+//     console.log(Ajay[i]);
+// }
+
+// const years = [1991, 2007, 1969, 2020]
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+
+//     ages.push(2037 - years[i])
+// }
+
+// console.log(ages);
+
+
+///////////////////////////////
+
+
+const info = ['Ajay', 'yadav', 'lives in shivaji colony', 'Roorkee']
+
+for (let i = info.length - 1; i >= 0; i--) {
+    console.log(i, info[i]);
+}
+
+//////////loop inside the loop 
+
+
+for (let exercise = 1; exercise < 10; exercise++) {
+    console.log(`------------Starting exercise ${exercise}`);
+
+
+    for (let rep = 1; rep < 5; rep++) {
+        console.log(`Exercise ${exercise} Count ${rep}`)
+    }
+}
+
+let count = 1;
+while (count <= 10) {
+    console.log(`While: lifiting weigths repetition ${count}`)
+    count++;
+}
+
+let dice = Math.floor(Math.random() * 6) + 1;
+while (dice !== 6) {
+    console.log(`You rolled dice with ${dice}`)
+    Math.floor(Math.random() * 6) + 1;
+
+    if (dice === 6) {
+        console.log('It is going to over')
+    }
+}
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+
+
+
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+const tips = []
+const totals = []
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    const total = bills[i] + tip
+    tips.push(tip);
+    totals.push(total);
+}
+
+
+
