@@ -141,16 +141,41 @@
 
 // Q-3 
 
-const checkday = prompt('Enter the day ')
+// const checkday = prompt('Enter the day ')
 
-if (checkday === 'saturday' || checkday === 'saturDay') {
-    console.log(`${checkday} is a weekend`)
+// if (checkday === 'saturday' || checkday === 'saturDay') {
+//     console.log(`${checkday} is a weekend`)
+// }
+// else if (checkday === 'Friday' || checkday === 'FriDay') {
+//     console.log(`${checkday} is a working day`)
+// }
+
+
+////////////// Check the how many days in a month
+
+function checkMonth(years) {
+    // return % 4 === 0   4 !=== 100  
+
+    return (years % 4 === 0 && years % 100 !== 0) || (years % 400 === 0);
 }
-else if (checkday === 'Friday' || checkday === 'FriDay') {
-    console.log(`${checkday} is a working day`)
+
+const dayInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+function checkMonth(Month, years) {
+    if (Month < 1 && Month > 12) {
+        return "Invalid Month";
+    }
+
+    if (Month === 2) {
+        return isLeapYear(years) ? 29 : 28;
+    }
+    return dayInMonth[Month - 1]
 }
 
 
 
+const resultYear = parseInt(prompt("Enter the year"));
+const monthResult = parseInt(prompt("Enter the valid month"))
 
-
+const result = checkMonth(month, year);
+console.log(`The number of days in ${month}/${year} is ${result}`);
