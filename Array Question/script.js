@@ -65,7 +65,7 @@ const itcompanies = ['facebook', 'google', 'microsoft', 'Apple', 'IBM', 'Oracle'
 // console.log(itcompanies[3]);
 
 
-/////////// to change in uppercase 
+/////////// to change in uppercase
 
 // for (let i = 0; i < itcompanies.length; i++) {
 //     let changeToUppercase = itcompanies[i].toUpperCase()
@@ -73,7 +73,7 @@ const itcompanies = ['facebook', 'google', 'microsoft', 'Apple', 'IBM', 'Oracle'
 // }
 
 
-// //Q-12 
+// //Q-12
 // const sentence = itcompanies.slice(0, -1).join(', ') + ' and ' + itcompanies.slice(-1);
 // const finalSentance = sentence + ' are big IT companies'
 // console.log(finalSentance);
@@ -81,25 +81,95 @@ const itcompanies = ['facebook', 'google', 'microsoft', 'Apple', 'IBM', 'Oracle'
 
 /////// Q-13
 
-const value = prompt("check the comapany")
-let found = false;
+// const value = prompt("check the comapany")
+// let found = false;
 
 
-const lowerCaseValue = value.toLowerCase();
+// const lowerCaseValue = value.toLowerCase();
 
-for (let i = 0; i < itcompanies.length; i++) {
-    if (itcompanies[i].toLowerCase() === lowerCaseValue) {
-        found = true;
+// for (let i = 0; i < itcompanies.length; i++) {
+//     if (itcompanies[i].toLowerCase() === lowerCaseValue) {
+//         found = true;
 
-        break;
+//         break;
 
-    }
+//     }
 
+// }
+// if (found) {
+//     console.log(`${value} this company is there`)
+// }
+// else {
+//     console.log(`${value} not found `)
+
+
+//Q-14
+
+//Step 1st:
+
+// const companies = ['Google', 'Microsoft', 'Apple', 'Amazon', 'Facebook'];
+
+// const filteredComapany = [];
+
+// for (let i = 0; i < companies.length; i++) {
+//     let comapanyName = companies[i];
+//     let oCount = 0;
+
+
+//     for (let k = 0; j <= comapanyName.length; j++) {
+//         if (comapanyName[k].toLowerCase() === '0') {
+//             oCount++;
+//         }
+//     }
+// }
+// if (oCount <= 1) {
+//     filteredComapany.push(copanyName);
+// }
+
+// console.log(filteredCopamies);
+
+
+
+// Sort the array using sort() method
+
+
+// const companies = ['Google', 'Microsoft', 'Apple', 'Amazon', 'Facebook'];
+
+
+// companies.sort;
+// console.log(companies);
+
+// // reverse method
+
+
+// companies.reverse();
+// console.log(companies);
+
+
+// const sliceTheCompany = companies.slice(0, 3);
+// console.log(sliceTheCompany);
+
+
+// //Last element 
+
+// const lastFour = companies.slice(-3);
+// console.log(lastFour);
+
+
+//Slice out the middle IT company or companies from the array
+
+
+const companyCheck = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+
+
+const middleIndex = math.floor(companyCheck.length / 2);
+
+
+if (companyCheck % 2 === 0) {
+    const middleCompanies = companyCheck.slice(middleIndex - 1, middleIndex + 1);
+    console.log(middleCompanies);
+} else {
+    const middleCompany = companyCheck.slice(middleIndex, middleIndex + 1);
+
+    console.log(middleCompany);
 }
-if (found) {
-    console.log(`${value} this company is there`)
-}
-else {
-    console.log(`${value} not found `)
-}
-
