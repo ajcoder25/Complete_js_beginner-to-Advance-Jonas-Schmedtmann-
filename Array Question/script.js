@@ -159,17 +159,46 @@ const itcompanies = ['facebook', 'google', 'microsoft', 'Apple', 'IBM', 'Oracle'
 //Slice out the middle IT company or companies from the array
 
 
-const companyCheck = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+// const companyCheck = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 
 
-const middleIndex = math.floor(companyCheck.length / 2);
+// const middleIndex = math.floor(companyCheck.length / 2);
 
 
-if (companyCheck % 2 === 0) {
-    const middleCompanies = companyCheck.slice(middleIndex - 1, middleIndex + 1);
-    console.log(middleCompanies);
-} else {
-    const middleCompany = companyCheck.slice(middleIndex, middleIndex + 1);
+// if (companyCheck % 2 === 0) {
+//     const middleCompanies = companyCheck.slice(middleIndex - 1, middleIndex + 1);
+//     console.log(middleCompanies);
+// } else {
+//     const middleCompany = companyCheck.slice(middleIndex, middleIndex + 1);
 
-    console.log(middleCompany);
-}
+//     console.log(middleCompany);
+// }
+
+
+//Level 3 
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+// ages.sort();
+// console.log(ages);
+
+// // Min 
+// console.log(ages[0]);
+
+// // max
+
+// const MaxAge = ages[ages.length - 1]
+
+// console.log(MaxAge);
+
+// console.log("Min Age ", ages)
+// console.log("max Age:", MaxAge)
+
+// //find the average age 
+
+console.log(ages / 10)
+
+
+
+
+
