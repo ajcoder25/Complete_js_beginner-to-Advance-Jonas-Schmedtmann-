@@ -22,7 +22,7 @@
 
 
 const secretNumber = Math.floor(Math.random() * 20) + 1;
-document.querySelector('.number').textContent = secretNumber;
+
 
 let score = 20;
 
@@ -42,6 +42,7 @@ document.querySelector('.check').addEventListener('click', function () {
     else if (guess === secretNumber) {
 
         document.querySelector('.message').textContent = '🏆 Correct Number!'
+        document.querySelector('.number').textContent = secretNumber;
 
 
 
@@ -93,6 +94,14 @@ document.querySelector('.check').addEventListener('click', function () {
 
 
     }
+
+    // Adding again feature in it 
+
+    document.querySelector('.again').addEventListener('click', function () {
+
+    })
+
+
 
 
 });
